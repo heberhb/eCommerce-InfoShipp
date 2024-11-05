@@ -12,7 +12,7 @@ Objetivo do software (a que deve servir)
 
   2° - Gerenciar Transações de Forma Segura: Implementar métodos seguros para processamento de pagamentos, protegendo os dados dos usuários e cumprindo com as normas e regulamentações de segurança, como PCI-DSS.
       
-  3° - Integrar Funcionalidades de Back-End: Deve incluir sistemas de gestão de inventário, controle de pedidos, atendimento ao cliente, e integração com outras ferramentas como ERPs, CRM, e sistemas de envio e          logística.
+  3° - Integrar Funcionalidades de Back-End: Deve incluir sistemas de gestão de inventário, controle de pedidos, atendimento ao cliente, e integração com outras ferramentas como ERPs, CRM, e sistemas de envio e logística.
       
   4° - Fornecer Suporte para Crescimento: O software deve ser escalável para suportar o crescimento do negócio, com a capacidade de lidar com um aumento no número de produtos, clientes e transações.
       
@@ -33,45 +33,92 @@ Funcionalidades do sistema (requisitos) -
 
 
  1. Requisitos Funcionais
-      * Gestão de Catálogo de Produtos:
-      * Adicionar, editar e remover produtos.
-      * Gerenciamento de categorias e subcategorias.
-      * Opção de incluir descrições, imagens, vídeos e especificações dos produtos.
-      * Carrinho de Compras:
-      * Adicionar e remover itens do carrinho.
-      * Atualizar quantidades.
-      * Calcular automaticamente os valores totais, incluindo impostos e frete.
-      * Processamento de Pedidos:
-      * Checkout simplificado.
-      * Vários métodos de pagamento (cartões, boleto, transferências, etc.).
-      * Confirmação de pedido via e-mail.
-      * Gestão de Clientes:
-      * Cadastro e login de clientes.
-      * Recuperação de senha.
-      * Histórico de pedidos.
-      * Gestão de endereços de entrega.
-      * Integração com Sistemas de Pagamento:
-      * Integração com gateways de pagamento (PayPal, Stripe, etc.).
-      * Suporte a diferentes moedas.
-      * Processamento seguro de pagamentos.
-      * Gestão de Inventário:
-      * Monitoramento de estoque em tempo real.
-      * Alertas para reabastecimento.
-      * Opção de produtos "fora de estoque" e "em breve".
-      * Entrega e Logística:
-      * Cálculo automático de frete.
-      * Integração com transportadoras.
-      * Rastreamento de pedidos.
-      * Sistema de Relatórios:
-      * Relatórios de vendas, clientes e produtos mais vendidos.
-      * Relatórios de tráfego do site.
-      * Marketing e Promoções:
-      * Gestão de cupons de desconto.
-      * Ofertas de frete grátis.
-      * Integração com e-mail marketing.
-      * Integração com Mídias Sociais:
-      * Compartilhamento de produtos.
-      * Login via redes sociais.
+
+A° - Catálogo de Produtos
+            * Gestão de Produtos:
+            * Adicionar, editar e remover produtos.
+            * Gerenciamento de categorias e subcategorias.
+            * Opção para incluir descrições, imagens, vídeos e especificações detalhadas.
+            * Atualizar quantidades e preços com suporte a promoções e descontos.
+            * Atributos Avançados do Produto:
+            * Definir variações de produtos (tamanho, cor, etc.).
+            * Exibir produtos "fora de estoque" e "em breve" com notificações opcionais de disponibilidade.
+            * Monitoramento de Estoque:
+            * Controle em tempo real e alertas automáticos para reabastecimento.
+            * Compartilhamento e Avaliações de Produtos:
+            * Opção para compartilhamento direto em redes sociais.
+            * Sistema de avaliações e comentários de clientes.
+            * Entrega e Logística:
+            * Cálculo automático de frete baseado em localização e opções de envio.
+
+B° - Página de Produto Individual
+            * Exibição de Detalhes do Produto:
+            * Galeria de imagens, vídeos e descrições interativas.
+            * Exibição de variações disponíveis (tamanho, cor, etc.) e atualização automática do estoque.
+            * Adicionar ao Carrinho:
+            * Opção de adicionar ao carrinho com suporte a quantidade e variações.
+            * Compartilhamento e Avaliações:
+            * Exibir opções de compartilhamento e avaliações de outros clientes.
+
+C° - Carrinho de Compras
+            * Gestão do Carrinho:
+            * Adicionar e remover produtos, ajustar quantidades e exibir total atualizado.
+            * Cálculo automático de impostos e frete baseado na localização.
+            * Aplicação de Cupons e Descontos:
+            * Opção para inserir cupons de desconto com cálculo em tempo real.
+            * Monitoramento de Estoque em Tempo Real:
+            * Verificação de disponibilidade ao adicionar ou atualizar itens no carrinho.
+
+D° - Checkout e Pagamento
+            * Processo de Checkout Simplificado:
+            * Opção de checkout como convidado ou logado.
+            * Resumo de pedidos, total final e opções de entrega antes da confirmação.
+            * Integração com Gateways de Pagamento:
+            * Suporte para múltiplas moedas e métodos de pagamento (cartões, PayPal, boleto, etc.).
+            * Pagamentos seguros com criptografia SSL.
+            * Confirmação de Pedido e Notificações:
+            * Confirmação de pedido via e-mail e notificação de status.
+            * Integração com sistemas de rastreamento de pedidos.
+
+E° - Conta do Cliente
+            * Cadastro e Login:
+            * Cadastro rápido e login seguro com opção de autenticação via redes sociais.
+            * Recuperação de senha.
+            * Gestão de Perfil do Cliente:
+            * Edição de informações pessoais, endereços e preferências de notificação.
+            * Histórico de Compras:
+            * Visualização e rastreamento de pedidos anteriores.
+
+F° - Gestão de Pedidos
+            * Histórico e Detalhes de Pedidos:
+            * Visualizar status de pedidos passados e em andamento.
+            * Gerenciamento de endereços de entrega com opção de edição.
+            * Gerenciamento de Inventário:
+            * Controle de estoque em tempo real e alertas para produtos com baixo estoque.
+
+G° - Sistema de Cadastro e Integrações
+            * Cadastro de Clientes e Integrações:
+            * Registro de novos clientes e login social.
+            * Integração com transportadoras e cálculo de frete automático.
+            * Integração com sistemas de e-mail marketing para comunicações.
+
+H° - Página de Integrações e APIs
+            * Integração com Sistemas de Terceiros:
+            * Integração com plataformas de e-mail marketing, sistemas ERP e CRMs.
+            * Integração com redes sociais para sincronização de produtos e promoções.
+            * Suporte a Webhooks e APIs:
+            * Notificações automáticas para eventos específicos (novo pedido, atualização de estoque).
+
+I° - Painel de Relatórios e Análises
+            * Relatórios e Indicadores de Desempenho:
+            * Relatórios de vendas, clientes, produtos mais vendidos e categorias.
+            * Análise de tráfego do site e conversões.
+            * Gestão de Marketing e Promoções:
+            * Gestão de cupons de desconto e ofertas sazonais.
+            * Promoções de frete grátis e campanhas de marketing personalizadas.
+      
+      
+      
 2. Requisitos Não Funcionais
       * Escalabilidade:
       * Capacidade de suportar um aumento no número de usuários, produtos e transações sem perda de performance.
@@ -117,3 +164,4 @@ Funcionalidades do sistema (requisitos) -
       * Versionamento e Controle de Código:
       * Uso de sistemas de controle de versão como Git.
       * Ambiente de desenvolvimento colaborativo, como GitHub ou GitLab.
+
